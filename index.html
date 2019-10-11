@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Bootstrap\bootstrap.min.css">
+    <script src="Bootstrap\jquery-3.3.1.slim.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <button class="btn btn-primary hide">Hide</button>
+        <button class="btn btn-success show">Show</button>
+        <button class="btn btn-info toggle">Toggle</button>
+        <button class="btn btn-primary fadeIn">FadeIn</button>
+        <button class="btn btn-success fadeOut">FadeOut</button>
+        <button class="btn btn-info fadeTo">FadeTo</button>
+        <button class="btn btn-secondary fadeToggle">FadeToggle</button>
+        <div class="para" style="display: none;">
+            <h2 >This is Heading of the paragraph</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minima ullam laudantium repellat dolorum numquam vitae magni molestias exercitationem et ut, ea, aliquam possimus quis laboriosam illum debitis soluta odio?Lorem, ipsum dolor.lorem30  . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quasi nemo? Unde magnam magni natus exercitationem ipsa saepe facilis perferendis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eligendi voluptate. Ipsum incidunt quae quisquam laudantium quasi! Eveniet deleniti natus facilis est ipsum nam maiores vero! Dolorem placeat aliquam id perspiciatis earum minus consectetur voluptatem eveniet, doloribus eius, voluptatum molestias! </p>
+        </div>
+    </div>
+    <script>
+    
+    $(document).ready(function(){
+        $(".hide").click(function(){
+            $(".para").hide('slow');
+        });
+        $(".show").click(function(){
+            $(".para").show('slow');
+        });
+        $(".toggle").click(function(){
+            $(".para").toggle('slow');
+        });
+    });
+    $(document).ready(function(){
+        $(".fadeIn").click(function(){
+            $(".para").fadeIn(1000);
+        });
+        $(".fadeOut").click(function(){
+            $(".para").fadeOut(1000);
+        });
+        $(".fadeTo").click(function(){
+            $(".para").fadeTo(1000);
+        });
+        $(".fadeToggle").click(function(){
+            $(".para").fadeToggle(1000);
+        });
+
+    });
+
+    </script>
+
+
+
+<script src="Bootstrap\popper.min.js"></script>
+<script src="Bootstrap\bootstrap.min.js"></script>
+</body>
+</html>
